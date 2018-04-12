@@ -19,7 +19,7 @@ public class ScreenShoot {
 			String date = new SimpleDateFormat("MM-dd-yyyy-HH-mm-ss").format(Calendar.getInstance().getTime());
 			String file=driver.getCurrentUrl().replaceAll("[^a-zA-Z]","");
 			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("target/screenshoot/"+file+"/"+date+".jpeg"));
+		FileUtils.copyFile(src, new File("output/screenshoot/"+file+"/"+date+".jpeg"));
 		}
 		 
 		catch (IOException e)

@@ -13,7 +13,6 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 import cucumber.api.java8.En;
-import cucumber.runtime.Utils;
 
 public class StepDefn implements En{
 	
@@ -29,7 +28,7 @@ public static WebDriver driver;
 		
 
 			driver.findElement(By.id("email")).sendKeys("hello");
-			driver.findElement(By.id("passa")).sendKeys("hehheleo");
+			driver.findElement(By.id("pass")).sendKeys("hehheleo");
 		
 	}
 	
